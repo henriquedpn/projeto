@@ -1,0 +1,2728 @@
+// Cópia de database.json para funcionar ao abrir index.html direto do disco (file://)
+window.SEED_DB = {
+  "meta": {
+    "sonda": "Sonda SS-01 (exemplo)",
+    "tipo": "Semissubmersível",
+    "operador": "Operadora Exemplo",
+    "bacia": "Bacia de Santos",
+    "versao": "1.0.0",
+    "atualizadoEm": "2026-11-11",
+    "observacao": "Dados de exemplo para demonstração. Valide os requisitos com o texto vigente de cada norma/resolução."
+  },
+  "responsaveis": [
+    "Coord. SMS",
+    "Supervisor de Elétrica",
+    "Supervisor de Mecânica",
+    "OIM",
+    "Técnico de Segurança",
+    "Engenheiro de Integridade",
+    "Supervisor de Manutenção",
+    "Toolpusher",
+    "Enfermeiro do Trabalho",
+    "Coord. de Qualidade"
+  ],
+  "nrs": [
+    {
+      "id": "NR-01",
+      "codigo": "NR-01",
+      "titulo": "Disposições Gerais e Gerenciamento de Riscos Ocupacionais",
+      "aplicavel": true,
+      "responsavel": "Coord. SMS",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-08-07",
+      "proximaVerificacao": "2027-08-07",
+      "requisitos": [
+        {
+          "id": "NR-01.01",
+          "descricao": "Programa de Gerenciamento de Riscos (PGR) implementado, com inventário de riscos atualizado",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-01.02",
+          "descricao": "Plano de ação do PGR com cronograma, responsáveis e acompanhamento",
+          "status": "parcial",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-01.03",
+          "descricao": "Ordens de serviço / informações de SST disponibilizadas aos trabalhadores",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-01.04",
+          "descricao": "Capacitações e treinamentos com conteúdo, carga horária e certificados registrados",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-01.05",
+          "descricao": "Análise de acidentes e doenças relacionadas ao trabalho integrada ao GRO",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-01.06",
+          "descricao": "Tratamento das informações das contratadas e prestadores no PGR",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-02",
+      "codigo": "NR-02",
+      "titulo": "Inspeção Prévia (REVOGADA)",
+      "aplicavel": false,
+      "responsavel": "",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "",
+      "proximaVerificacao": "",
+      "requisitos": [],
+      "observacoes": "Norma revogada — mantida apenas para referência histórica."
+    },
+    {
+      "id": "NR-03",
+      "codigo": "NR-03",
+      "titulo": "Embargo e Interdição",
+      "aplicavel": true,
+      "responsavel": "OIM",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-08-18",
+      "proximaVerificacao": "2027-08-18",
+      "requisitos": [
+        {
+          "id": "NR-03.01",
+          "descricao": "Procedimento interno para atendimento a embargos/interdições da fiscalização",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-03.02",
+          "descricao": "Registro de termos de embargo/interdição recebidos e ações de levantamento",
+          "status": "nao_avaliado",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-04",
+      "codigo": "NR-04",
+      "titulo": "Serviços Especializados em Segurança e Medicina do Trabalho (SESMT)",
+      "aplicavel": true,
+      "responsavel": "Coord. SMS",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2025-11-13",
+      "proximaVerificacao": "2026-11-13",
+      "requisitos": [
+        {
+          "id": "NR-04.01",
+          "descricao": "SESMT dimensionado conforme grau de risco e número de empregados",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-04.02",
+          "descricao": "Registro do SESMT e profissionais habilitados",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-04.03",
+          "descricao": "Relatórios e indicadores de SST elaborados pelo SESMT",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-05",
+      "codigo": "NR-05",
+      "titulo": "Comissão Interna de Prevenção de Acidentes (CIPA)",
+      "aplicavel": true,
+      "responsavel": "Técnico de Segurança",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-01-19",
+      "proximaVerificacao": "2027-01-19",
+      "requisitos": [
+        {
+          "id": "NR-05.01",
+          "descricao": "CIPA/CIPLAT constituída e eleita conforme NR-05 e NR-37",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-05.02",
+          "descricao": "Reuniões ordinárias mensais com atas registradas",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-05.03",
+          "descricao": "Treinamento dos membros da CIPA/CIPLAT",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-05.04",
+          "descricao": "Mapa de riscos / participação na identificação de perigos",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-06",
+      "codigo": "NR-06",
+      "titulo": "Equipamentos de Proteção Individual (EPI)",
+      "aplicavel": true,
+      "responsavel": "Técnico de Segurança",
+      "periodicidadeDias": 180,
+      "ultimaVerificacao": "2026-06-20",
+      "proximaVerificacao": "2026-12-17",
+      "requisitos": [
+        {
+          "id": "NR-06.01",
+          "descricao": "EPIs com Certificado de Aprovação (CA) válido",
+          "status": "parcial",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-06.02",
+          "descricao": "Fichas de entrega de EPI assinadas e atualizadas",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-06.03",
+          "descricao": "Treinamento sobre uso, guarda e conservação de EPIs",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-06.04",
+          "descricao": "Seleção de EPI baseada no inventário de riscos do PGR",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-06.05",
+          "descricao": "Higienização, substituição e controle de validade dos EPIs",
+          "status": "nao_conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-07",
+      "codigo": "NR-07",
+      "titulo": "Programa de Controle Médico de Saúde Ocupacional (PCMSO)",
+      "aplicavel": true,
+      "responsavel": "Enfermeiro do Trabalho",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-04-06",
+      "proximaVerificacao": "2027-04-06",
+      "requisitos": [
+        {
+          "id": "NR-07.01",
+          "descricao": "PCMSO elaborado com base nos riscos do PGR",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-07.02",
+          "descricao": "ASOs admissionais, periódicos, retorno, mudança de risco e demissionais em dia",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-07.03",
+          "descricao": "Relatório analítico anual do PCMSO",
+          "status": "parcial",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-07.04",
+          "descricao": "Exames complementares conforme agentes de exposição (ruído, benzeno etc.)",
+          "status": "parcial",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-08",
+      "codigo": "NR-08",
+      "titulo": "Edificações",
+      "aplicavel": true,
+      "responsavel": "Supervisor de Manutenção",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-01-19",
+      "proximaVerificacao": "2026-10-21",
+      "requisitos": [
+        {
+          "id": "NR-08.01",
+          "descricao": "Pisos, escadas, rampas e passarelas em condições seguras",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-08.02",
+          "descricao": "Proteção contra quedas em aberturas e desníveis",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-09",
+      "codigo": "NR-09",
+      "titulo": "Avaliação e Controle das Exposições Ocupacionais a Agentes Físicos, Químicos e Biológicos",
+      "aplicavel": true,
+      "responsavel": "Coord. SMS",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2025-12-28",
+      "proximaVerificacao": "2026-12-28",
+      "requisitos": [
+        {
+          "id": "NR-09.01",
+          "descricao": "Avaliações quantitativas de ruído e vibração",
+          "status": "nao_conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-09.02",
+          "descricao": "Avaliação de exposição a agentes químicos (benzeno, H2S, fluidos de perfuração)",
+          "status": "parcial",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-09.03",
+          "descricao": "Medidas de controle e monitoramento periódico das exposições",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-09.04",
+          "descricao": "Programa de Conservação Auditiva implementado",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-10",
+      "codigo": "NR-10",
+      "titulo": "Segurança em Instalações e Serviços em Eletricidade",
+      "aplicavel": true,
+      "responsavel": "Supervisor de Elétrica",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-08-07",
+      "proximaVerificacao": "2027-08-07",
+      "requisitos": [
+        {
+          "id": "NR-10.01",
+          "descricao": "Prontuário das Instalações Elétricas (PIE) atualizado",
+          "status": "nao_avaliado",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-10.02",
+          "descricao": "Diagramas unifilares atualizados e com especificação do aterramento",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-10.03",
+          "descricao": "Laudos de SPDA e aterramento",
+          "status": "parcial",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-10.04",
+          "descricao": "Trabalhadores com treinamento NR-10 Básico e SEP válidos",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-10.05",
+          "descricao": "Procedimentos de bloqueio e etiquetagem (LOTO) implementados",
+          "status": "nao_conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-10.06",
+          "descricao": "Certificação de equipamentos elétricos para atmosferas explosivas",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-10.07",
+          "descricao": "Relatório técnico de inspeções com recomendações e cronograma",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-11",
+      "codigo": "NR-11",
+      "titulo": "Transporte, Movimentação, Armazenagem e Manuseio de Materiais",
+      "aplicavel": true,
+      "responsavel": "Supervisor de Mecânica",
+      "periodicidadeDias": 180,
+      "ultimaVerificacao": "2026-07-21",
+      "proximaVerificacao": "2027-01-17",
+      "requisitos": [
+        {
+          "id": "NR-11.01",
+          "descricao": "Operadores de guindaste e equipamentos de içamento habilitados e certificados",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-11.02",
+          "descricao": "Inspeção e certificação de guindastes, cabos, lingas e acessórios de içamento",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-11.03",
+          "descricao": "Plano de rigging para içamentos críticos",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-11.04",
+          "descricao": "Indicação de carga máxima permitida nos equipamentos",
+          "status": "parcial",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-12",
+      "codigo": "NR-12",
+      "titulo": "Segurança no Trabalho em Máquinas e Equipamentos",
+      "aplicavel": true,
+      "responsavel": "Supervisor de Mecânica",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-05-01",
+      "proximaVerificacao": "2027-05-01",
+      "requisitos": [
+        {
+          "id": "NR-12.01",
+          "descricao": "Inventário de máquinas e equipamentos com apreciação de riscos",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-12.02",
+          "descricao": "Proteções fixas e móveis com intertravamento",
+          "status": "nao_avaliado",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-12.03",
+          "descricao": "Dispositivos de parada de emergência funcionais e testados",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-12.04",
+          "descricao": "Manuais e procedimentos de trabalho e segurança disponíveis",
+          "status": "parcial",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-12.05",
+          "descricao": "Capacitação dos operadores de máquinas (ex.: pipe handling, top drive)",
+          "status": "parcial",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-13",
+      "codigo": "NR-13",
+      "titulo": "Caldeiras, Vasos de Pressão, Tubulações e Tanques Metálicos de Armazenamento",
+      "aplicavel": true,
+      "responsavel": "Engenheiro de Integridade",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-08-07",
+      "proximaVerificacao": "2027-08-07",
+      "requisitos": [
+        {
+          "id": "NR-13.01",
+          "descricao": "Prontuário de vasos de pressão, caldeiras e tubulações completos",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-13.02",
+          "descricao": "Registro de Segurança e Relatórios de Inspeção atualizados",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-13.03",
+          "descricao": "Inspeções de segurança iniciais, periódicas e extraordinárias em dia",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-13.04",
+          "descricao": "Válvulas de segurança (PSV) calibradas e com certificado",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-13.05",
+          "descricao": "Plaqueta de identificação e categoria dos vasos",
+          "status": "nao_avaliado",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-13.06",
+          "descricao": "Profissional Habilitado (PH) designado",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-13.07",
+          "descricao": "Operadores de unidades de processo/caldeira treinados",
+          "status": "nao_conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-14",
+      "codigo": "NR-14",
+      "titulo": "Fornos",
+      "aplicavel": false,
+      "responsavel": "",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "",
+      "proximaVerificacao": "",
+      "requisitos": [],
+      "observacoes": "Não aplicável à atividade de perfuração offshore."
+    },
+    {
+      "id": "NR-15",
+      "codigo": "NR-15",
+      "titulo": "Atividades e Operações Insalubres",
+      "aplicavel": true,
+      "responsavel": "Coord. SMS",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-04-13",
+      "proximaVerificacao": "2026-10-25",
+      "requisitos": [
+        {
+          "id": "NR-15.01",
+          "descricao": "Laudo de insalubridade (LTCAT) atualizado",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-15.02",
+          "descricao": "Pagamento de adicional quando aplicável e medidas de neutralização",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-16",
+      "codigo": "NR-16",
+      "titulo": "Atividades e Operações Perigosas",
+      "aplicavel": true,
+      "responsavel": "Coord. SMS",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-08-30",
+      "proximaVerificacao": "2027-08-30",
+      "requisitos": [
+        {
+          "id": "NR-16.01",
+          "descricao": "Laudo de periculosidade (inflamáveis, eletricidade, radiação ionizante)",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-16.02",
+          "descricao": "Identificação das áreas de risco",
+          "status": "parcial",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-17",
+      "codigo": "NR-17",
+      "titulo": "Ergonomia",
+      "aplicavel": true,
+      "responsavel": "Coord. SMS",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-06-25",
+      "proximaVerificacao": "2027-06-25",
+      "requisitos": [
+        {
+          "id": "NR-17.01",
+          "descricao": "Avaliação Ergonômica Preliminar (AEP) realizada",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-17.02",
+          "descricao": "Análise Ergonômica do Trabalho (AET) quando necessária",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-17.03",
+          "descricao": "Mobiliário e postos de trabalho adequados (salas de controle, sondador)",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-17.04",
+          "descricao": "Organização do trabalho em turnos e regime de embarque",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-18",
+      "codigo": "NR-18",
+      "titulo": "Segurança e Saúde no Trabalho na Indústria da Construção",
+      "aplicavel": false,
+      "responsavel": "",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "",
+      "proximaVerificacao": "",
+      "requisitos": [],
+      "observacoes": "Não aplicável à atividade de perfuração offshore."
+    },
+    {
+      "id": "NR-19",
+      "codigo": "NR-19",
+      "titulo": "Explosivos",
+      "aplicavel": true,
+      "responsavel": "Toolpusher",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-09-23",
+      "proximaVerificacao": "2027-09-23",
+      "requisitos": [
+        {
+          "id": "NR-19.01",
+          "descricao": "Armazenamento de explosivos (canhoneio) em paiol adequado",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-19.02",
+          "descricao": "Procedimento de manuseio de explosivos e controle de rádio-silêncio",
+          "status": "nao_avaliado",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-19.03",
+          "descricao": "Pessoal habilitado e controle de estoque com o Exército (SFPC)",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-20",
+      "codigo": "NR-20",
+      "titulo": "Segurança e Saúde no Trabalho com Inflamáveis e Combustíveis",
+      "aplicavel": true,
+      "responsavel": "Coord. SMS",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-08-07",
+      "proximaVerificacao": "2026-10-21",
+      "requisitos": [
+        {
+          "id": "NR-20.01",
+          "descricao": "Projeto da instalação e análise de riscos (HAZOP/APR)",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-20.02",
+          "descricao": "Prontuário da instalação conforme NR-20",
+          "status": "nao_conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-20.03",
+          "descricao": "Plano de inspeção e manutenção de equipamentos",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-20.04",
+          "descricao": "Capacitação NR-20 dos trabalhadores conforme classe da instalação",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-20.05",
+          "descricao": "Plano de Resposta a Emergências (PRE)",
+          "status": "parcial",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-20.06",
+          "descricao": "Controle de fontes de ignição e Permissão de Trabalho a quente",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-21",
+      "codigo": "NR-21",
+      "titulo": "Trabalhos a Céu Aberto",
+      "aplicavel": true,
+      "responsavel": "Técnico de Segurança",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-06-14",
+      "proximaVerificacao": "2027-06-14",
+      "requisitos": [
+        {
+          "id": "NR-21.01",
+          "descricao": "Proteção contra intempéries e exposição solar",
+          "status": "nao_conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-21.02",
+          "descricao": "Disponibilidade de água potável e áreas de descanso",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-22",
+      "codigo": "NR-22",
+      "titulo": "Segurança e Saúde Ocupacional na Mineração",
+      "aplicavel": false,
+      "responsavel": "",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "",
+      "proximaVerificacao": "",
+      "requisitos": [],
+      "observacoes": "Não aplicável à atividade de perfuração offshore."
+    },
+    {
+      "id": "NR-23",
+      "codigo": "NR-23",
+      "titulo": "Proteção Contra Incêndios",
+      "aplicavel": true,
+      "responsavel": "Técnico de Segurança",
+      "periodicidadeDias": 180,
+      "ultimaVerificacao": "2026-08-26",
+      "proximaVerificacao": "2027-02-22",
+      "requisitos": [
+        {
+          "id": "NR-23.01",
+          "descricao": "Saídas de emergência sinalizadas e desobstruídas",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-23.02",
+          "descricao": "Extintores inspecionados, recarregados e testados hidrostaticamente",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-23.03",
+          "descricao": "Brigada de incêndio treinada e exercícios periódicos",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-23.04",
+          "descricao": "Sistemas fixos de combate a incêndio inspecionados",
+          "status": "nao_avaliado",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-24",
+      "codigo": "NR-24",
+      "titulo": "Condições Sanitárias e de Conforto nos Locais de Trabalho",
+      "aplicavel": true,
+      "responsavel": "OIM",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-07-05",
+      "proximaVerificacao": "2027-07-05",
+      "requisitos": [
+        {
+          "id": "NR-24.01",
+          "descricao": "Instalações sanitárias, vestiários e refeitórios adequados",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-24.02",
+          "descricao": "Controle de potabilidade da água",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-24.03",
+          "descricao": "Camarotes e áreas de vivência adequados (ver NR-37)",
+          "status": "parcial",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-25",
+      "codigo": "NR-25",
+      "titulo": "Resíduos Industriais",
+      "aplicavel": true,
+      "responsavel": "Coord. SMS",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-04-13",
+      "proximaVerificacao": "2027-04-13",
+      "requisitos": [
+        {
+          "id": "NR-25.01",
+          "descricao": "Plano de gerenciamento de resíduos (cascalho, fluidos, oleosos)",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-25.02",
+          "descricao": "Segregação, acondicionamento e destinação final com MTR",
+          "status": "nao_conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-25.03",
+          "descricao": "Treinamento sobre manuseio de resíduos",
+          "status": "parcial",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-26",
+      "codigo": "NR-26",
+      "titulo": "Sinalização e Identificação de Segurança",
+      "aplicavel": true,
+      "responsavel": "Técnico de Segurança",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-09-05",
+      "proximaVerificacao": "2027-09-05",
+      "requisitos": [
+        {
+          "id": "NR-26.01",
+          "descricao": "Cores de segurança e identificação de tubulações",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-26.02",
+          "descricao": "Rotulagem de produtos químicos conforme GHS",
+          "status": "parcial",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-26.03",
+          "descricao": "Fichas de Dados de Segurança (FDS) disponíveis",
+          "status": "nao_conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-27",
+      "codigo": "NR-27",
+      "titulo": "Registro Profissional do Técnico de Segurança (REVOGADA)",
+      "aplicavel": false,
+      "responsavel": "",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "",
+      "proximaVerificacao": "",
+      "requisitos": [],
+      "observacoes": "Norma revogada — mantida apenas para referência histórica."
+    },
+    {
+      "id": "NR-28",
+      "codigo": "NR-28",
+      "titulo": "Fiscalização e Penalidades",
+      "aplicavel": true,
+      "responsavel": "Coord. SMS",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2025-12-08",
+      "proximaVerificacao": "2026-10-19",
+      "requisitos": [
+        {
+          "id": "NR-28.01",
+          "descricao": "Controle de autos de infração e notificações recebidas",
+          "status": "nao_conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-28.02",
+          "descricao": "Atendimento aos prazos concedidos pela fiscalização",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-29",
+      "codigo": "NR-29",
+      "titulo": "Segurança e Saúde no Trabalho Portuário",
+      "aplicavel": false,
+      "responsavel": "",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "",
+      "proximaVerificacao": "",
+      "requisitos": [],
+      "observacoes": "Não aplicável à atividade de perfuração offshore."
+    },
+    {
+      "id": "NR-30",
+      "codigo": "NR-30",
+      "titulo": "Segurança e Saúde no Trabalho Aquaviário",
+      "aplicavel": true,
+      "responsavel": "OIM",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-05-26",
+      "proximaVerificacao": "2026-10-28",
+      "requisitos": [
+        {
+          "id": "NR-30.01",
+          "descricao": "Grupo de Segurança e Saúde no Trabalho a Bordo (GSSTB) quando aplicável",
+          "status": "nao_conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-30.02",
+          "descricao": "Condições de habitabilidade e alimentação da tripulação",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-30.03",
+          "descricao": "Documentação marítima e tripulação de segurança (Marinha do Brasil)",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-31",
+      "codigo": "NR-31",
+      "titulo": "Segurança e Saúde no Trabalho na Agricultura e Pecuária",
+      "aplicavel": false,
+      "responsavel": "",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "",
+      "proximaVerificacao": "",
+      "requisitos": [],
+      "observacoes": "Não aplicável à atividade de perfuração offshore."
+    },
+    {
+      "id": "NR-32",
+      "codigo": "NR-32",
+      "titulo": "Segurança e Saúde no Trabalho em Serviços de Saúde",
+      "aplicavel": true,
+      "responsavel": "Enfermeiro do Trabalho",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-05-18",
+      "proximaVerificacao": "2027-05-18",
+      "requisitos": [
+        {
+          "id": "NR-32.01",
+          "descricao": "Enfermaria de bordo com plano de riscos biológicos",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-32.02",
+          "descricao": "Gerenciamento de resíduos de serviços de saúde",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-32.03",
+          "descricao": "Vacinação dos profissionais de saúde",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-33",
+      "codigo": "NR-33",
+      "titulo": "Segurança e Saúde nos Trabalhos em Espaços Confinados",
+      "aplicavel": true,
+      "responsavel": "Técnico de Segurança",
+      "periodicidadeDias": 180,
+      "ultimaVerificacao": "2026-10-18",
+      "proximaVerificacao": "2027-04-16",
+      "requisitos": [
+        {
+          "id": "NR-33.01",
+          "descricao": "Cadastro e sinalização de todos os espaços confinados (tanques, pits, colunas)",
+          "status": "parcial",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-33.02",
+          "descricao": "Permissão de Entrada e Trabalho (PET) emitida e arquivada",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-33.03",
+          "descricao": "Supervisores de entrada e vigias capacitados",
+          "status": "nao_conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-33.04",
+          "descricao": "Monitoramento contínuo da atmosfera com detectores calibrados",
+          "status": "nao_avaliado",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-33.05",
+          "descricao": "Plano de resgate e equipe treinada",
+          "status": "nao_avaliado",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-34",
+      "codigo": "NR-34",
+      "titulo": "Condições e Meio Ambiente de Trabalho na Indústria da Construção, Reparação e Desmonte Naval",
+      "aplicavel": true,
+      "responsavel": "Supervisor de Manutenção",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-10-20",
+      "proximaVerificacao": "2027-10-20",
+      "requisitos": [
+        {
+          "id": "NR-34.01",
+          "descricao": "Aplicação durante docagem/reparos em estaleiro",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-34.02",
+          "descricao": "Trabalho a quente com PT e observador",
+          "status": "parcial",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-34.03",
+          "descricao": "Montagem e uso de andaimes conforme norma",
+          "status": "nao_conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-35",
+      "codigo": "NR-35",
+      "titulo": "Trabalho em Altura",
+      "aplicavel": true,
+      "responsavel": "Técnico de Segurança",
+      "periodicidadeDias": 180,
+      "ultimaVerificacao": "2026-09-16",
+      "proximaVerificacao": "2026-10-21",
+      "requisitos": [
+        {
+          "id": "NR-35.01",
+          "descricao": "Análise de Risco (AR) e Permissão de Trabalho (PT) para trabalho em altura",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-35.02",
+          "descricao": "Trabalhadores capacitados e com aptidão em ASO",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-35.03",
+          "descricao": "Sistemas de proteção contra quedas inspecionados (cintos, talabartes, linhas de vida)",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-35.04",
+          "descricao": "Plano de resgate e emergência para trabalho em altura (ex.: torre, plataforma do torrista)",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-36",
+      "codigo": "NR-36",
+      "titulo": "Segurança e Saúde no Trabalho em Empresas de Abate e Processamento de Carnes",
+      "aplicavel": false,
+      "responsavel": "",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "",
+      "proximaVerificacao": "",
+      "requisitos": [],
+      "observacoes": "Não aplicável à atividade de perfuração offshore."
+    },
+    {
+      "id": "NR-37",
+      "codigo": "NR-37",
+      "titulo": "Segurança e Saúde em Plataformas de Petróleo",
+      "aplicavel": true,
+      "responsavel": "OIM",
+      "periodicidadeDias": 180,
+      "ultimaVerificacao": "2026-10-26",
+      "proximaVerificacao": "2026-10-21",
+      "requisitos": [
+        {
+          "id": "NR-37.01",
+          "descricao": "CIPLAT constituída e atuante",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-37.02",
+          "descricao": "Treinamentos básico e avançado de segurança para plataforma (NR-37)",
+          "status": "nao_conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-37.03",
+          "descricao": "Plano de Resposta a Emergências da plataforma e simulados periódicos",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-37.04",
+          "descricao": "Condições de habitabilidade, alimentação e áreas de vivência",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-37.05",
+          "descricao": "Gerenciamento de riscos em operações de perfuração e produção",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-37.06",
+          "descricao": "Monitoramento de agentes químicos e controle de H2S",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-37.07",
+          "descricao": "Comunicação de acidentes e incidentes à fiscalização",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-37.08",
+          "descricao": "Inspeções de segurança e manutenção de equipamentos críticos",
+          "status": "parcial",
+          "evidencia": ""
+        },
+        {
+          "id": "NR-37.09",
+          "descricao": "Sistemas de detecção, alarme e proteção contra incêndio e explosão",
+          "status": "nao_avaliado",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": ""
+    },
+    {
+      "id": "NR-38",
+      "codigo": "NR-38",
+      "titulo": "Segurança e Saúde no Trabalho nas Atividades de Limpeza Urbana e Manejo de Resíduos Sólidos",
+      "aplicavel": false,
+      "responsavel": "",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "",
+      "proximaVerificacao": "",
+      "requisitos": [],
+      "observacoes": "Não aplicável à atividade de perfuração offshore."
+    }
+  ],
+  "sgso": [
+    {
+      "id": "PG-01",
+      "codigo": "PG-01",
+      "titulo": "Cultura de Segurança, Compromisso e Responsabilidade Gerencial",
+      "aplicavel": true,
+      "responsavel": "Coord. SMS",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-07-06",
+      "proximaVerificacao": "2027-07-06",
+      "requisitos": [
+        {
+          "id": "PG-01.01",
+          "descricao": "Política de segurança operacional documentada e divulgada",
+          "status": "nao_avaliado",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-01.02",
+          "descricao": "Objetivos e metas de segurança operacional definidos",
+          "status": "nao_avaliado",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-01.03",
+          "descricao": "Recursos e responsabilidades gerenciais definidos",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-01.04",
+          "descricao": "Análise crítica do SGSO pela alta direção",
+          "status": "nao_conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "referencia": "Resolução ANP nº 43/2007 — Regulamento Técnico do SGSO"
+    },
+    {
+      "id": "PG-02",
+      "codigo": "PG-02",
+      "titulo": "Envolvimento do Pessoal",
+      "aplicavel": true,
+      "responsavel": "OIM",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-05-21",
+      "proximaVerificacao": "2027-05-21",
+      "requisitos": [
+        {
+          "id": "PG-02.01",
+          "descricao": "Mecanismos de participação da força de trabalho na segurança operacional",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-02.02",
+          "descricao": "Canal de comunicação e reporte de desvios / Stop Work Authority",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-02.03",
+          "descricao": "Reuniões de segurança (DDS) registradas",
+          "status": "nao_avaliado",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "referencia": "Resolução ANP nº 43/2007 — Regulamento Técnico do SGSO"
+    },
+    {
+      "id": "PG-03",
+      "codigo": "PG-03",
+      "titulo": "Qualificação, Treinamento e Desempenho do Pessoal",
+      "aplicavel": true,
+      "responsavel": "Coord. de Qualidade",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-02-01",
+      "proximaVerificacao": "2027-02-01",
+      "requisitos": [
+        {
+          "id": "PG-03.01",
+          "descricao": "Matriz de treinamento por função",
+          "status": "nao_conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-03.02",
+          "descricao": "Registros de qualificação e certificação (IWCF/IADC WellSharp, BOSIET/T-HUET, NRs)",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-03.03",
+          "descricao": "Avaliação de desempenho e competência",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-03.04",
+          "descricao": "Programa de integração (induction) a bordo",
+          "status": "parcial",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "referencia": "Resolução ANP nº 43/2007 — Regulamento Técnico do SGSO"
+    },
+    {
+      "id": "PG-04",
+      "codigo": "PG-04",
+      "titulo": "Ambiente de Trabalho e Fatores Humanos",
+      "aplicavel": true,
+      "responsavel": "Coord. SMS",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2025-12-08",
+      "proximaVerificacao": "2026-10-19",
+      "requisitos": [
+        {
+          "id": "PG-04.01",
+          "descricao": "Avaliação de fatores humanos em projeto e operação",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-04.02",
+          "descricao": "Gestão de fadiga e jornada de trabalho",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-04.03",
+          "descricao": "Ergonomia de painéis e salas de controle",
+          "status": "nao_avaliado",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "referencia": "Resolução ANP nº 43/2007 — Regulamento Técnico do SGSO"
+    },
+    {
+      "id": "PG-05",
+      "codigo": "PG-05",
+      "titulo": "Seleção, Controle e Gerenciamento de Contratadas",
+      "aplicavel": true,
+      "responsavel": "Coord. de Qualidade",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-08-30",
+      "proximaVerificacao": "2027-08-30",
+      "requisitos": [
+        {
+          "id": "PG-05.01",
+          "descricao": "Critérios de SMS na seleção de contratadas",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-05.02",
+          "descricao": "Interface (bridging document) entre operador e contratadas",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-05.03",
+          "descricao": "Avaliação de desempenho de SMS das contratadas",
+          "status": "nao_conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "referencia": "Resolução ANP nº 43/2007 — Regulamento Técnico do SGSO"
+    },
+    {
+      "id": "PG-06",
+      "codigo": "PG-06",
+      "titulo": "Monitoramento e Melhoria Contínua do Desempenho",
+      "aplicavel": true,
+      "responsavel": "Coord. de Qualidade",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-08-28",
+      "proximaVerificacao": "2027-08-28",
+      "requisitos": [
+        {
+          "id": "PG-06.01",
+          "descricao": "Indicadores de desempenho de segurança operacional (proativos e reativos)",
+          "status": "nao_conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-06.02",
+          "descricao": "Análise de tendências e ações de melhoria",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-06.03",
+          "descricao": "Comunicação de incidentes à ANP (Resolução ANP nº 44/2009)",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "referencia": "Resolução ANP nº 43/2007 — Regulamento Técnico do SGSO"
+    },
+    {
+      "id": "PG-07",
+      "codigo": "PG-07",
+      "titulo": "Auditorias",
+      "aplicavel": true,
+      "responsavel": "Coord. de Qualidade",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-03-26",
+      "proximaVerificacao": "2027-03-26",
+      "requisitos": [
+        {
+          "id": "PG-07.01",
+          "descricao": "Programa anual de auditorias internas do SGSO",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-07.02",
+          "descricao": "Auditores qualificados e independentes da área auditada",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-07.03",
+          "descricao": "Relatórios de auditoria e acompanhamento das não conformidades",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "referencia": "Resolução ANP nº 43/2007 — Regulamento Técnico do SGSO"
+    },
+    {
+      "id": "PG-08",
+      "codigo": "PG-08",
+      "titulo": "Gestão da Informação e da Documentação",
+      "aplicavel": true,
+      "responsavel": "Coord. de Qualidade",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-05-18",
+      "proximaVerificacao": "2027-05-18",
+      "requisitos": [
+        {
+          "id": "PG-08.01",
+          "descricao": "Sistema de controle de documentos e registros",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-08.02",
+          "descricao": "Documentação técnica da instalação acessível e atualizada",
+          "status": "parcial",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-08.03",
+          "descricao": "Controle de revisões de procedimentos",
+          "status": "parcial",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "referencia": "Resolução ANP nº 43/2007 — Regulamento Técnico do SGSO"
+    },
+    {
+      "id": "PG-09",
+      "codigo": "PG-09",
+      "titulo": "Investigação de Incidentes",
+      "aplicavel": true,
+      "responsavel": "Coord. SMS",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-10-31",
+      "proximaVerificacao": "2027-10-31",
+      "requisitos": [
+        {
+          "id": "PG-09.01",
+          "descricao": "Procedimento de investigação de incidentes com análise de causa raiz",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-09.02",
+          "descricao": "Equipe de investigação qualificada",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-09.03",
+          "descricao": "Implementação e verificação de eficácia das recomendações",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-09.04",
+          "descricao": "Divulgação das lições aprendidas",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "referencia": "Resolução ANP nº 43/2007 — Regulamento Técnico do SGSO"
+    },
+    {
+      "id": "PG-10",
+      "codigo": "PG-10",
+      "titulo": "Projeto, Construção, Instalação e Desativação",
+      "aplicavel": true,
+      "responsavel": "Engenheiro de Integridade",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-06-17",
+      "proximaVerificacao": "2026-10-30",
+      "requisitos": [
+        {
+          "id": "PG-10.01",
+          "descricao": "Normas e padrões de projeto definidos",
+          "status": "nao_conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-10.02",
+          "descricao": "Análise de riscos na fase de projeto",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-10.03",
+          "descricao": "Comissionamento e testes de aceitação documentados",
+          "status": "nao_avaliado",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-10.04",
+          "descricao": "Plano de desativação de instalações",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "referencia": "Resolução ANP nº 43/2007 — Regulamento Técnico do SGSO"
+    },
+    {
+      "id": "PG-11",
+      "codigo": "PG-11",
+      "titulo": "Elementos Críticos de Segurança Operacional",
+      "aplicavel": true,
+      "responsavel": "Supervisor de Manutenção",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-04-30",
+      "proximaVerificacao": "2027-04-30",
+      "requisitos": [
+        {
+          "id": "PG-11.01",
+          "descricao": "Lista de Elementos Críticos de Segurança Operacional (ECSO) identificada",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-11.02",
+          "descricao": "Padrões de desempenho definidos para cada ECSO",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-11.03",
+          "descricao": "Gerenciamento de ECSO inoperantes / degradados (bypass e inibições)",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "referencia": "Resolução ANP nº 43/2007 — Regulamento Técnico do SGSO"
+    },
+    {
+      "id": "PG-12",
+      "codigo": "PG-12",
+      "titulo": "Identificação e Análise de Riscos",
+      "aplicavel": true,
+      "responsavel": "Coord. SMS",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-03-18",
+      "proximaVerificacao": "2027-03-18",
+      "requisitos": [
+        {
+          "id": "PG-12.01",
+          "descricao": "Estudos de análise de riscos (HAZOP, HAZID, APR) atualizados",
+          "status": "parcial",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-12.02",
+          "descricao": "Revisão periódica das análises de risco",
+          "status": "nao_avaliado",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-12.03",
+          "descricao": "Acompanhamento das recomendações das análises de risco",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "referencia": "Resolução ANP nº 43/2007 — Regulamento Técnico do SGSO"
+    },
+    {
+      "id": "PG-13",
+      "codigo": "PG-13",
+      "titulo": "Integridade Mecânica",
+      "aplicavel": true,
+      "responsavel": "Engenheiro de Integridade",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2025-11-17",
+      "proximaVerificacao": "2026-10-18",
+      "requisitos": [
+        {
+          "id": "PG-13.01",
+          "descricao": "Plano de inspeção e manutenção (preventiva, preditiva) implementado",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-13.02",
+          "descricao": "Programa de integridade de equipamentos estáticos e rotativos",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-13.03",
+          "descricao": "Registros de inspeções, testes e calibrações",
+          "status": "nao_avaliado",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-13.04",
+          "descricao": "Gestão de backlog de manutenção de equipamentos críticos",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "referencia": "Resolução ANP nº 43/2007 — Regulamento Técnico do SGSO"
+    },
+    {
+      "id": "PG-14",
+      "codigo": "PG-14",
+      "titulo": "Planejamento e Gerenciamento de Grandes Emergências",
+      "aplicavel": true,
+      "responsavel": "OIM",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2025-12-23",
+      "proximaVerificacao": "2026-12-23",
+      "requisitos": [
+        {
+          "id": "PG-14.01",
+          "descricao": "Plano de Resposta a Emergência (PRE) e Plano de Emergência Individual (PEI)",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-14.02",
+          "descricao": "Simulados periódicos (abandono, incêndio, kick/blowout, homem ao mar, H2S)",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-14.03",
+          "descricao": "Recursos de resposta a emergência disponíveis e testados",
+          "status": "nao_conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-14.04",
+          "descricao": "Comunicação com autoridades (ANP, Marinha, IBAMA)",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "referencia": "Resolução ANP nº 43/2007 — Regulamento Técnico do SGSO"
+    },
+    {
+      "id": "PG-15",
+      "codigo": "PG-15",
+      "titulo": "Procedimentos Operacionais",
+      "aplicavel": true,
+      "responsavel": "Toolpusher",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-10-09",
+      "proximaVerificacao": "2027-10-09",
+      "requisitos": [
+        {
+          "id": "PG-15.01",
+          "descricao": "Procedimentos operacionais escritos e aprovados",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-15.02",
+          "descricao": "Procedimentos de controle de poço disponíveis e treinados",
+          "status": "nao_conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-15.03",
+          "descricao": "Revisão periódica dos procedimentos",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "referencia": "Resolução ANP nº 43/2007 — Regulamento Técnico do SGSO"
+    },
+    {
+      "id": "PG-16",
+      "codigo": "PG-16",
+      "titulo": "Gerenciamento de Mudanças",
+      "aplicavel": true,
+      "responsavel": "Coord. de Qualidade",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2025-12-01",
+      "proximaVerificacao": "2026-12-01",
+      "requisitos": [
+        {
+          "id": "PG-16.01",
+          "descricao": "Procedimento de Gestão de Mudanças (MOC) implementado",
+          "status": "nao_conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-16.02",
+          "descricao": "Análise de riscos das mudanças",
+          "status": "nao_conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-16.03",
+          "descricao": "Comunicação e treinamento após mudanças",
+          "status": "parcial",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "referencia": "Resolução ANP nº 43/2007 — Regulamento Técnico do SGSO"
+    },
+    {
+      "id": "PG-17",
+      "codigo": "PG-17",
+      "titulo": "Práticas de Trabalho Seguro e Procedimentos de Controle em Atividades Especiais",
+      "aplicavel": true,
+      "responsavel": "Técnico de Segurança",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-09-10",
+      "proximaVerificacao": "2027-09-10",
+      "requisitos": [
+        {
+          "id": "PG-17.01",
+          "descricao": "Sistema de Permissão de Trabalho (PT) implementado",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-17.02",
+          "descricao": "Controle de isolamento de energias (LOTO)",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-17.03",
+          "descricao": "Controle de trabalhos a quente, espaço confinado, altura e içamento",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "PG-17.04",
+          "descricao": "Controle de inibições e bypass de sistemas de segurança",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "referencia": "Resolução ANP nº 43/2007 — Regulamento Técnico do SGSO"
+    }
+  ],
+  "itensCriticos": [
+    {
+      "id": "IC-01",
+      "codigo": "IC-01",
+      "titulo": "Integridade de Tubulações",
+      "aplicavel": true,
+      "responsavel": "Engenheiro de Integridade",
+      "periodicidadeDias": 180,
+      "ultimaVerificacao": "2026-11-03",
+      "proximaVerificacao": "2027-05-02",
+      "requisitos": [
+        {
+          "id": "IC-01.01",
+          "descricao": "Plano de inspeção de tubulações com medição de espessura (US) em pontos de controle",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-01.02",
+          "descricao": "Avaliação de corrosão/erosão e taxa de corrosão calculada",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-01.03",
+          "descricao": "Teste hidrostático das linhas de alta pressão (standpipe, choke & kill manifold)",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-01.04",
+          "descricao": "Registro e tratamento de reparos provisórios (clamps) com MOC",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-01.05",
+          "descricao": "Identificação e isométricos atualizados",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-01.06",
+          "descricao": "Suportes, juntas e flanges inspecionados",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "categoria": "Integridade",
+      "criticidade": "Alta",
+      "referencia": "SGSO PG-13; NR-13; ASME B31.3; API 570",
+      "descricao": "Tubulações de processo, de lama de alta pressão, choke & kill e utilidades devem ter integridade comprovada. Perda de contenção ou espessura abaixo do mínimo exige interdição do sistema.",
+      "interrompeOperacao": true,
+      "estadoOperacional": "operacional",
+      "testes": [
+        {
+          "data": "2026-11-03",
+          "descricao": "Verificação periódica",
+          "resultado": "aprovado",
+          "executor": "Engenheiro de Integridade"
+        }
+      ]
+    },
+    {
+      "id": "IC-02",
+      "codigo": "IC-02",
+      "titulo": "Dispersão de Gases",
+      "aplicavel": true,
+      "responsavel": "Coord. SMS",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-09-14",
+      "proximaVerificacao": "2027-09-14",
+      "requisitos": [
+        {
+          "id": "IC-02.01",
+          "descricao": "Estudo de dispersão de gases atualizado para a configuração atual da sonda",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-02.02",
+          "descricao": "Posicionamento seguro de vents, diverter e saída do mud gas separator",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-02.03",
+          "descricao": "Classificação de áreas (zonas 0/1/2) consistente com o estudo",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-02.04",
+          "descricao": "Detecção de gás nas tomadas de ar do HVAC com intertravamento",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-02.05",
+          "descricao": "Análise de radiação térmica do flare / queimador (well test)",
+          "status": "parcial",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "categoria": "Processo / Segurança",
+      "criticidade": "Alta",
+      "referencia": "SGSO PG-10/PG-12; NR-20; NR-37; API RP 505",
+      "descricao": "Estudos de dispersão de gases devem garantir que vents, flare, separador atmosférico (mud gas separator) e descarga do diverter não atinjam áreas de risco, tomadas de ar ou áreas habitadas.",
+      "interrompeOperacao": true,
+      "estadoOperacional": "operacional",
+      "testes": [
+        {
+          "data": "2026-09-14",
+          "descricao": "Verificação periódica",
+          "resultado": "aprovado",
+          "executor": "Coord. SMS"
+        }
+      ]
+    },
+    {
+      "id": "IC-03",
+      "codigo": "IC-03",
+      "titulo": "Sistema de Bomba de Incêndio e Dilúvio",
+      "aplicavel": true,
+      "responsavel": "Supervisor de Manutenção",
+      "periodicidadeDias": 30,
+      "ultimaVerificacao": "2026-11-04",
+      "proximaVerificacao": "2026-10-30",
+      "requisitos": [
+        {
+          "id": "IC-03.01",
+          "descricao": "Teste semanal de partida das bombas de incêndio (principal e emergência)",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-03.02",
+          "descricao": "Teste de desempenho (vazão x pressão) anual das bombas",
+          "status": "parcial",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-03.03",
+          "descricao": "Teste de dilúvio por área com verificação de bicos obstruídos",
+          "status": "nao_conforme",
+          "evidencia": "3 bicos obstruídos no dilúvio do moon pool"
+        },
+        {
+          "id": "IC-03.04",
+          "descricao": "Rede de incêndio pressurizada (jockey pump) e válvulas de isolamento na posição correta",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-03.05",
+          "descricao": "Tanque de diesel das bombas com autonomia adequada",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-03.06",
+          "descricao": "Teste de partida automática por queda de pressão / sinal do F&G",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-03.07",
+          "descricao": "Canhões monitores e hidrantes inspecionados",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "categoria": "Combate a Incêndio",
+      "criticidade": "Alta",
+      "referencia": "SGSO PG-11/PG-13; NR-23; NR-37; SOLAS / MODU Code; NFPA 20/15",
+      "descricao": "As bombas de incêndio e o sistema de dilúvio devem estar disponíveis e com desempenho comprovado. Indisponibilidade das bombas de incêndio leva à interrupção das operações.",
+      "interrompeOperacao": true,
+      "estadoOperacional": "degradado",
+      "testes": [
+        {
+          "data": "2026-11-04",
+          "descricao": "Verificação periódica",
+          "resultado": "aprovado",
+          "executor": "Supervisor de Manutenção"
+        }
+      ]
+    },
+    {
+      "id": "IC-04",
+      "codigo": "IC-04",
+      "titulo": "Sistema de Detecção de Fogo e Gás (F&G)",
+      "aplicavel": true,
+      "responsavel": "Supervisor de Elétrica",
+      "periodicidadeDias": 90,
+      "ultimaVerificacao": "2026-09-09",
+      "proximaVerificacao": "2026-12-08",
+      "requisitos": [
+        {
+          "id": "IC-04.01",
+          "descricao": "Calibração/bump test periódico dos detectores de gás",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-04.02",
+          "descricao": "Teste funcional dos detectores de chama, fumaça e calor",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-04.03",
+          "descricao": "Teste da matriz de causa e efeito do F&G",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-04.04",
+          "descricao": "Controle de detectores inibidos/bypass com autorização",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-04.05",
+          "descricao": "Alarmes audiovisuais (PA/GA) testados",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "categoria": "Combate a Incêndio",
+      "criticidade": "Alta",
+      "referencia": "SGSO PG-11; NR-37; IEC 61511; MODU Code",
+      "descricao": "Detectores de gás inflamável, H2S, chama, fumaça e calor devem estar calibrados e com lógica de votação/ações funcionais.",
+      "interrompeOperacao": true,
+      "estadoOperacional": "operacional",
+      "testes": [
+        {
+          "data": "2026-09-09",
+          "descricao": "Verificação periódica",
+          "resultado": "aprovado",
+          "executor": "Supervisor de Elétrica"
+        }
+      ]
+    },
+    {
+      "id": "IC-05",
+      "codigo": "IC-05",
+      "titulo": "Sistema de Parada de Emergência (ESD) e Despressurização",
+      "aplicavel": true,
+      "responsavel": "Supervisor de Elétrica",
+      "periodicidadeDias": 180,
+      "ultimaVerificacao": "2026-10-24",
+      "proximaVerificacao": "2027-04-22",
+      "requisitos": [
+        {
+          "id": "IC-05.01",
+          "descricao": "Teste dos botoeiras de ESD nos diversos níveis",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-05.02",
+          "descricao": "Teste das válvulas de shutdown (SDV) com tempo de fechamento",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-05.03",
+          "descricao": "Teste de corte de ventilação e fechamento de dampers",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-05.04",
+          "descricao": "Teste de parada de equipamentos não-Ex (ESD de equipamentos elétricos)",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "categoria": "Processo / Segurança",
+      "criticidade": "Alta",
+      "referencia": "SGSO PG-11; NR-37; IEC 61511",
+      "descricao": "Os níveis de ESD devem estar funcionais e testados conforme matriz de causa e efeito.",
+      "interrompeOperacao": true,
+      "estadoOperacional": "operacional",
+      "testes": [
+        {
+          "data": "2026-10-24",
+          "descricao": "Verificação periódica",
+          "resultado": "aprovado",
+          "executor": "Supervisor de Elétrica"
+        }
+      ]
+    },
+    {
+      "id": "IC-06",
+      "codigo": "IC-06",
+      "titulo": "BOP e Sistema de Controle de Poço",
+      "aplicavel": true,
+      "responsavel": "Toolpusher",
+      "periodicidadeDias": 21,
+      "ultimaVerificacao": "2026-11-10",
+      "proximaVerificacao": "2026-12-01",
+      "requisitos": [
+        {
+          "id": "IC-06.01",
+          "descricao": "Teste de pressão do BOP (baixa e alta) a cada 21 dias ou conforme API Std 53",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-06.02",
+          "descricao": "Teste de função do BOP semanal a partir dos painéis",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-06.03",
+          "descricao": "Teste de capacidade dos acumuladores (drawdown test)",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-06.04",
+          "descricao": "Certificação 5 anos (recertificação) do BOP",
+          "status": "nao_avaliado",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-06.05",
+          "descricao": "Teste do choke & kill manifold e válvulas",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-06.06",
+          "descricao": "Simulados de kick (kick drill) registrados",
+          "status": "nao_avaliado",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-06.07",
+          "descricao": "Sistemas de backup (acústico, ROV, autoshear/deadman) testados",
+          "status": "parcial",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "categoria": "Controle de Poço",
+      "criticidade": "Alta",
+      "referencia": "Resolução ANP nº 46/2016 (SGIP); API Std 53; API RP 59",
+      "descricao": "BOP e sistemas de controle (acumuladores, painéis, choke manifold) devem ser testados conforme norma. Falha de BOP impede a continuidade da operação.",
+      "interrompeOperacao": true,
+      "estadoOperacional": "operacional",
+      "testes": [
+        {
+          "data": "2026-11-10",
+          "descricao": "Verificação periódica",
+          "resultado": "aprovado",
+          "executor": "Toolpusher"
+        }
+      ]
+    },
+    {
+      "id": "IC-07",
+      "codigo": "IC-07",
+      "titulo": "Barreiras de Segurança do Poço (CSB)",
+      "aplicavel": true,
+      "responsavel": "Toolpusher",
+      "periodicidadeDias": 30,
+      "ultimaVerificacao": "2026-10-18",
+      "proximaVerificacao": "2026-11-02",
+      "requisitos": [
+        {
+          "id": "IC-07.01",
+          "descricao": "Esquemáticos de barreiras atualizados por fase do poço",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-07.02",
+          "descricao": "Testes de integridade das barreiras (testes de pressão, LOT/FIT)",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-07.03",
+          "descricao": "Monitoramento contínuo de parâmetros do poço (volume nos tanques, trip tank)",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-07.04",
+          "descricao": "Procedimento de resposta a perda de barreira",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "categoria": "Controle de Poço",
+      "criticidade": "Alta",
+      "referencia": "Resolução ANP nº 46/2016 (SGIP); NORSOK D-010",
+      "descricao": "Conjuntos Solidários de Barreira (CSB) devem ser definidos, testados e monitorados em todas as fases.",
+      "interrompeOperacao": true,
+      "estadoOperacional": "operacional",
+      "testes": [
+        {
+          "data": "2026-10-18",
+          "descricao": "Verificação periódica",
+          "resultado": "aprovado",
+          "executor": "Toolpusher"
+        }
+      ]
+    },
+    {
+      "id": "IC-08",
+      "codigo": "IC-08",
+      "titulo": "Vasos de Pressão e Válvulas de Segurança (PSV)",
+      "aplicavel": true,
+      "responsavel": "Engenheiro de Integridade",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-08-06",
+      "proximaVerificacao": "2027-08-06",
+      "requisitos": [
+        {
+          "id": "IC-08.01",
+          "descricao": "Inspeções de segurança periódicas em dia",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-08.02",
+          "descricao": "PSVs calibradas e lacradas com certificado",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-08.03",
+          "descricao": "Prontuário e registro de segurança atualizados",
+          "status": "parcial",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-08.04",
+          "descricao": "Sistema de alívio dimensionado para os cenários de sobrepressão",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "categoria": "Integridade",
+      "criticidade": "Alta",
+      "referencia": "NR-13; SGSO PG-13; API 510; API 576",
+      "descricao": "Vasos de pressão (acumuladores, ar comprimido, separadores) e PSVs com inspeção vencida devem ser retirados de operação.",
+      "interrompeOperacao": true,
+      "estadoOperacional": "operacional",
+      "testes": [
+        {
+          "data": "2026-08-06",
+          "descricao": "Verificação periódica",
+          "resultado": "aprovado",
+          "executor": "Engenheiro de Integridade"
+        }
+      ]
+    },
+    {
+      "id": "IC-09",
+      "codigo": "IC-09",
+      "titulo": "Geração de Energia de Emergência",
+      "aplicavel": true,
+      "responsavel": "Supervisor de Elétrica",
+      "periodicidadeDias": 30,
+      "ultimaVerificacao": "2026-11-07",
+      "proximaVerificacao": "2026-12-07",
+      "requisitos": [
+        {
+          "id": "IC-09.01",
+          "descricao": "Teste semanal de partida do gerador de emergência",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-09.02",
+          "descricao": "Teste de black-out com transferência automática",
+          "status": "parcial",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-09.03",
+          "descricao": "Teste de autonomia das UPS e baterias",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-09.04",
+          "descricao": "Iluminação de emergência e rotas de fuga testadas",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "categoria": "Elétrica",
+      "criticidade": "Alta",
+      "referencia": "MODU Code; NR-10; NR-37",
+      "descricao": "Gerador de emergência, UPS e iluminação de emergência devem estar disponíveis.",
+      "interrompeOperacao": true,
+      "estadoOperacional": "operacional",
+      "testes": [
+        {
+          "data": "2026-11-07",
+          "descricao": "Verificação periódica",
+          "resultado": "aprovado",
+          "executor": "Supervisor de Elétrica"
+        }
+      ]
+    },
+    {
+      "id": "IC-10",
+      "codigo": "IC-10",
+      "titulo": "Equipamentos Elétricos em Áreas Classificadas (Ex)",
+      "aplicavel": true,
+      "responsavel": "Supervisor de Elétrica",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2026-01-04",
+      "proximaVerificacao": "2027-01-04",
+      "requisitos": [
+        {
+          "id": "IC-10.01",
+          "descricao": "Inventário Ex com certificados (INMETRO/IECEx)",
+          "status": "parcial",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-10.02",
+          "descricao": "Inspeções detalhadas e visuais conforme IEC 60079-17",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-10.03",
+          "descricao": "Tratamento das não conformidades Ex com prazo",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-10.04",
+          "descricao": "Pessoal com competência Ex (IECEx CoPC ou equivalente)",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "categoria": "Elétrica",
+      "criticidade": "Média",
+      "referencia": "NR-10; NR-37; IEC 60079-17; IECEx",
+      "descricao": "Equipamentos em áreas classificadas devem possuir certificação Ex e inspeções periódicas.",
+      "interrompeOperacao": true,
+      "estadoOperacional": "operacional",
+      "testes": [
+        {
+          "data": "2026-01-04",
+          "descricao": "Verificação periódica",
+          "resultado": "aprovado",
+          "executor": "Supervisor de Elétrica"
+        }
+      ]
+    },
+    {
+      "id": "IC-11",
+      "codigo": "IC-11",
+      "titulo": "Meios de Abandono e Salvatagem",
+      "aplicavel": true,
+      "responsavel": "OIM",
+      "periodicidadeDias": 90,
+      "ultimaVerificacao": "2026-09-23",
+      "proximaVerificacao": "2026-12-22",
+      "requisitos": [
+        {
+          "id": "IC-11.01",
+          "descricao": "Baleeiras inspecionadas e com teste de lançamento",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-11.02",
+          "descricao": "Balsas salva-vidas com certificação de revisão anual",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-11.03",
+          "descricao": "Coletes e roupas de imersão em quantidade suficiente",
+          "status": "nao_avaliado",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-11.04",
+          "descricao": "Simulados de abandono registrados",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-11.05",
+          "descricao": "Controle de POB atualizado",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "categoria": "Emergência",
+      "criticidade": "Alta",
+      "referencia": "NR-37; SOLAS / MODU Code; NORMAM",
+      "descricao": "Baleeiras, balsas, coletes e rotas de fuga devem estar disponíveis para 100% do POB (mais redundância).",
+      "interrompeOperacao": true,
+      "estadoOperacional": "operacional",
+      "testes": [
+        {
+          "data": "2026-09-23",
+          "descricao": "Verificação periódica",
+          "resultado": "aprovado",
+          "executor": "OIM"
+        }
+      ]
+    },
+    {
+      "id": "IC-12",
+      "codigo": "IC-12",
+      "titulo": "Ventilação, Pressurização e HVAC",
+      "aplicavel": true,
+      "responsavel": "Supervisor de Mecânica",
+      "periodicidadeDias": 90,
+      "ultimaVerificacao": "2026-09-24",
+      "proximaVerificacao": "2026-10-29",
+      "requisitos": [
+        {
+          "id": "IC-12.01",
+          "descricao": "Teste de sobrepressão das salas (LQ, salas elétricas, controle)",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-12.02",
+          "descricao": "Teste de fechamento de dampers corta-fogo",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-12.03",
+          "descricao": "Alarme de perda de pressurização funcional",
+          "status": "parcial",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "categoria": "Processo / Segurança",
+      "criticidade": "Média",
+      "referencia": "NR-37; API RP 505; IEC 60079-13",
+      "descricao": "Salas pressurizadas e ventilação de áreas classificadas garantem a não-classificação de ambientes com equipamentos não-Ex.",
+      "interrompeOperacao": true,
+      "estadoOperacional": "operacional",
+      "testes": [
+        {
+          "data": "2026-09-24",
+          "descricao": "Verificação periódica",
+          "resultado": "aprovado",
+          "executor": "Supervisor de Mecânica"
+        }
+      ]
+    },
+    {
+      "id": "IC-13",
+      "codigo": "IC-13",
+      "titulo": "Detecção e Proteção contra H2S",
+      "aplicavel": true,
+      "responsavel": "Coord. SMS",
+      "periodicidadeDias": 90,
+      "ultimaVerificacao": "2026-10-09",
+      "proximaVerificacao": "2026-10-24",
+      "requisitos": [
+        {
+          "id": "IC-13.01",
+          "descricao": "Detectores fixos de H2S calibrados",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-13.02",
+          "descricao": "Equipamentos de respiração autônoma (SCBA) e sistema cascata inspecionados",
+          "status": "parcial",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-13.03",
+          "descricao": "Treinamento de H2S da tripulação",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-13.04",
+          "descricao": "Pontos de encontro (briefing areas) definidos conforme vento",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "categoria": "Processo / Segurança",
+      "criticidade": "Alta",
+      "referencia": "NR-37; NR-09; API RP 49",
+      "descricao": "Em poços com potencial de H2S, a detecção, os equipamentos de respiração e os treinamentos são obrigatórios.",
+      "interrompeOperacao": true,
+      "estadoOperacional": "operacional",
+      "testes": [
+        {
+          "data": "2026-10-09",
+          "descricao": "Verificação periódica",
+          "resultado": "aprovado",
+          "executor": "Coord. SMS"
+        }
+      ]
+    },
+    {
+      "id": "IC-14",
+      "codigo": "IC-14",
+      "titulo": "Posicionamento Dinâmico / Ancoragem e Estabilidade",
+      "aplicavel": true,
+      "responsavel": "OIM",
+      "periodicidadeDias": 365,
+      "ultimaVerificacao": "2025-12-24",
+      "proximaVerificacao": "2026-11-04",
+      "requisitos": [
+        {
+          "id": "IC-14.01",
+          "descricao": "FMEA de DP atualizado e testes de DP anuais (DP trials)",
+          "status": "parcial",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-14.02",
+          "descricao": "Teste de EDS (Emergency Disconnect Sequence)",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-14.03",
+          "descricao": "Manual de estabilidade e controle de pesos (deck load)",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-14.04",
+          "descricao": "Sistema de lastro e detecção de alagamento testados",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "categoria": "Marítimo",
+      "criticidade": "Alta",
+      "referencia": "NORMAM; IMO MSC/Circ.645; IMCA M 103",
+      "descricao": "Perda de posição pode exigir desconexão de emergência (EDS). Os sistemas de DP/ancoragem e lastro devem estar íntegros.",
+      "interrompeOperacao": true,
+      "estadoOperacional": "operacional",
+      "testes": [
+        {
+          "data": "2025-12-24",
+          "descricao": "Verificação periódica",
+          "resultado": "aprovado",
+          "executor": "OIM"
+        }
+      ]
+    },
+    {
+      "id": "IC-15",
+      "codigo": "IC-15",
+      "titulo": "Gestão de Elementos Críticos (ECSO) e Inibições",
+      "aplicavel": true,
+      "responsavel": "Supervisor de Manutenção",
+      "periodicidadeDias": 30,
+      "ultimaVerificacao": "2026-11-08",
+      "proximaVerificacao": "2026-11-03",
+      "requisitos": [
+        {
+          "id": "IC-15.01",
+          "descricao": "Registro de inibições/bypass com autorização do OIM",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-15.02",
+          "descricao": "Análise de risco e medidas mitigadoras para ECSO degradados",
+          "status": "conforme",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-15.03",
+          "descricao": "Backlog de manutenção de ECSO dentro do limite aceitável",
+          "status": "nao_avaliado",
+          "evidencia": ""
+        },
+        {
+          "id": "IC-15.04",
+          "descricao": "Comunicação à ANP quando aplicável",
+          "status": "conforme",
+          "evidencia": ""
+        }
+      ],
+      "observacoes": "",
+      "categoria": "Gestão",
+      "criticidade": "Alta",
+      "referencia": "SGSO PG-11/PG-17",
+      "descricao": "Inibições, bypass e backlog de manutenção de ECSO devem ser controlados com análise de risco e medidas mitigadoras.",
+      "interrompeOperacao": true,
+      "estadoOperacional": "operacional",
+      "testes": [
+        {
+          "data": "2026-11-08",
+          "descricao": "Verificação periódica",
+          "resultado": "aprovado",
+          "executor": "Supervisor de Manutenção"
+        }
+      ]
+    }
+  ],
+  "auditorias": [
+    {
+      "id": "AUD-2026-001",
+      "tipo": "externa",
+      "entidade": "ANP",
+      "titulo": "Auditoria SGSO ANP",
+      "dataInicio": "2026-03-10",
+      "dataFim": "2026-03-13",
+      "auditorLider": "Equipe SSM/ANP",
+      "status": "concluida",
+      "escopo": [
+        "PG-11",
+        "PG-13",
+        "PG-17",
+        "IC-03",
+        "IC-06"
+      ],
+      "constatacoes": [
+        {
+          "id": "C-001",
+          "ref": "PG-13",
+          "tipo": "nc_maior",
+          "descricao": "Backlog de manutenção preventiva de ECSO acima de 30 dias sem análise de risco.",
+          "acao": "Elaborar análise de risco do backlog e plano de recuperação.",
+          "responsavel": "Supervisor de Manutenção",
+          "prazo": "2026-05-15",
+          "status": "fechada"
+        },
+        {
+          "id": "C-002",
+          "ref": "IC-03",
+          "tipo": "nc_maior",
+          "descricao": "Teste de dilúvio do moon pool com bicos obstruídos.",
+          "acao": "Desobstruir bicos, flushing da rede e novo teste.",
+          "responsavel": "Supervisor de Manutenção",
+          "prazo": "2026-10-30",
+          "status": "em_tratamento"
+        },
+        {
+          "id": "C-003",
+          "ref": "PG-17",
+          "tipo": "nc_menor",
+          "descricao": "PTs sem registro de teste de gás em 2 de 15 amostras.",
+          "acao": "Reciclagem dos emitentes de PT.",
+          "responsavel": "Técnico de Segurança",
+          "prazo": "2026-06-30",
+          "status": "fechada"
+        }
+      ]
+    },
+    {
+      "id": "AUD-2026-002",
+      "tipo": "interna",
+      "entidade": "Auditoria Interna",
+      "titulo": "Auditoria interna NR-10 / NR-13",
+      "dataInicio": "2026-08-05",
+      "dataFim": "2026-08-06",
+      "auditorLider": "Coord. de Qualidade",
+      "status": "concluida",
+      "escopo": [
+        "NR-10",
+        "NR-13",
+        "IC-01",
+        "IC-08"
+      ],
+      "constatacoes": [
+        {
+          "id": "C-001",
+          "ref": "NR-10",
+          "tipo": "nc_menor",
+          "descricao": "Diagrama unifilar do quadro QD-05 desatualizado.",
+          "acao": "Atualizar diagrama e incluir no PIE.",
+          "responsavel": "Supervisor de Elétrica",
+          "prazo": "2026-10-15",
+          "status": "aberta"
+        },
+        {
+          "id": "C-002",
+          "ref": "IC-01",
+          "tipo": "observacao",
+          "descricao": "Clamp provisório na linha de água salgada sem MOC associado.",
+          "acao": "Abrir MOC e programar reparo definitivo.",
+          "responsavel": "Engenheiro de Integridade",
+          "prazo": "2026-12-20",
+          "status": "em_tratamento"
+        },
+        {
+          "id": "C-003",
+          "ref": "NR-13",
+          "tipo": "oportunidade",
+          "descricao": "Digitalizar prontuários dos vasos de pressão.",
+          "acao": "Avaliar sistema de gestão documental.",
+          "responsavel": "Coord. de Qualidade",
+          "prazo": "2027-02-28",
+          "status": "aberta"
+        }
+      ]
+    },
+    {
+      "id": "AUD-2026-003",
+      "tipo": "externa",
+      "entidade": "Operadora (Cliente)",
+      "titulo": "Auditoria de aceitação da sonda (pré-contrato)",
+      "dataInicio": "2026-12-01",
+      "dataFim": "2026-12-04",
+      "auditorLider": "Equipe Operadora",
+      "status": "planejada",
+      "escopo": [
+        "NR-37",
+        "PG-14",
+        "IC-04",
+        "IC-05",
+        "IC-06",
+        "IC-11"
+      ],
+      "constatacoes": []
+    }
+  ]
+};
